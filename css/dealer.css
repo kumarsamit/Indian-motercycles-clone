@@ -1,0 +1,62 @@
+.dealers-list{
+    max-width:100%;
+    margin: 50px auto;
+}
+.dealers-list .dealer-heading{
+    width: 100%;
+}
+.dealer-heading p{
+    font-size: 22px;
+    padding: 0 20px;
+    color: #9c122a;
+}
+.dealers-list .dealers-detail{
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.dealers-detail .dealer-info{
+    width: 300px;
+    margin: 10px;
+}
+.dealer-info h2{
+    color: #9c122a;
+    font-size: 18px;
+    font-weight: normal;
+}
+.dealer-info h2 span{
+    background: #9c122a;
+    font-size: 28px;
+    color: white;
+    padding: 2px 15px;
+    margin-right: 5px;
+}
+.dealer-info p{
+    margin:10px 0 0 0 ;
+    padding-left: 45px;
+}
+.dealer-info small{
+    display: block;
+    padding-left: 45px;
+
+}
+.dealer-info a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    padding-left: 45px;
+    color: black;
+}
+.dealer-info a:hover{
+    color: black;
+}
+
+.dealer-info a .fas{
+    color: #9c122a;
+    font-size: 20px;
+    margin-left: 5px;
+}
