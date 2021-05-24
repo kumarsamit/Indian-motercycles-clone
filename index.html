@@ -20,12 +20,17 @@
         <!-- owl carousel slider --> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
-
+        <!-- bootstrap CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <!-- bootstrap JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     </head>
     <body>
         <!-- header section -->
         <div class="lang-header">
+            <a href="language.html">
             <i class="fas fa-globe-europe"></i>
+            </a>
         </div>
         <div class="header" id="stheader">
             <div class="site-logo">
@@ -37,13 +42,64 @@
                 <li><a href="#">APPAREL</a></li>
                 <li><a href="#">ACCESSORIES</a></li>
                 <li><a href="#">TEST RIDE</a></li>
-                <li><a href="#">ABOUT</a></li> 
+                <li><a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">ABOUT</a></li> 
             </ul>
             <div class="header-icon">
                 <i onclick="menutoggle()" class="fas fa-bars"></i>
                 <i class="fas fa-globe-europe"></i>
             </div>
         </div>
+        <!-- about modal  starts here--> 
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+        <div class="modal-body">
+            <div class="about-modal-icon">
+                <div class="about-modal-icon-holder">
+                    <img src="img/about-modal/indian-timeline.png" alt="">
+                    <h4><a href="#">HISTORICAL TIMELINE</a></h4>
+                </div>
+                <div class="about-modal-icon-holder">
+                    <img src="img/about-modal/test-ride.png" alt="">
+                    <h4><a href="#">TEST RIDE</a></h4>
+                </div>
+                <div class="about-modal-icon-holder">
+                    <img src="img/about-modal/ind-riders-group.png" alt="">
+                    <h4><a href="#">INDIAN MOTERCYCLE RIDER</a></h4>
+                </div>
+            </div>
+            <div class="about-modal-important-links">
+                <div class="about-modal-important-links-card ">
+                    <h4>Who are we</h4>
+                    <a href="#">Indian Motorcycle Racing</a>
+                    <a href="#">Our History</a>
+                </div>
+                <div class="about-modal-important-links-card  about-modal-border">
+                    <h4>Tools</h4>
+                    <a href="#">Owner resources</a>
+                    <a href="#">Find a dealer</a>
+                    <a href="#">Test Ride</a>
+                </div>
+                <div class="about-modal-important-links-card about-modal-border">
+                    <h4>Press</h4>
+                    <a href="#">Indian Motorcycle Racing</a>
+                    <a href="#">Our History</a>
+                </div>
+                <div class="about-modal-important-links-card about-modal-border">
+                    <h4>Brochures</h4>
+                    <a href="#">Accessories brochures</a>
+                    <a href="#">Scout brochures</a>
+                </div> 
+                
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        
+
+        <!-- about modal ends here -->
+
         <!-- hero-page -->
             <!-- hero slider -->
             <div class="hero-page">
@@ -68,8 +124,8 @@
                 </div>
                 <!-- hero video -->
                 <div class="hero-video">
-                    <div>
-                        <video muted autoplay controls loop preload="none" playsinline height="auto">
+                    <div >
+                        <video  muted autoplay controls loop preload="none" playsinline >  
                             <source src="https://youtu.be/UjYlq_o7k0E">
                         </video>
                     </div>
@@ -195,26 +251,32 @@
                 <a href="#"><i class="fas fa-fingerprint"></i><span class="cookies-p">cookies <br> policy</span></a>
             </div>
             <div class="fixed-footer-links">
+               <div class="link-holder">
                 <a class="fixed-nav" href="#">the 2021 lineup</a>
                 <div class="footer-link-content">
-                    <a href="#">Find a dealer</a>
-                    <a href="#">About INDIAN</a>
-                    <a href="#">Owner</a>
+                    <a href="#">FTR</a>
+                    <a href="#">Scout</a>
+                    <a href="#">Cruiser</a>
+                    <a href="#">Bagger</a>
                 </div>
-
+               </div>
+               <div class="link-holder">
                 <a class="fixed-nav" href="#">SERVICE & support</a>
                 <div class="footer-link-content">
                     <a href="#">Find a dealer</a>
                     <a href="#">About INDIAN</a>
                     <a href="#">Owner</a>
-                </div>
-                
+                </div>  
+               </div>
+               <div class="link-holder">
                 <a class="fixed-nav" href="#">community</a>
                 <div class="footer-link-content">
                     <a href="#">Indian Motorcycle Racing</a>
                     <a href="#">Our History</a>
                 </div>
+               </div>
 
+               <div class="link-holder">
                 <a class="fixed-nav" href="#">shopping tools</a>
                 <div class="footer-link-content">
                     <a href="#">Get a Quote</a>
@@ -224,30 +286,25 @@
                     <a href="#">accessories</a>
                     <a href="#">accessories instruction</a>
                 </div>
-
+               </div>
+            
+               <div class="link-holder">
                 <a class="fixed-nav" href="#">resources</a>
                 <div class="footer-link-content">
-                    <a href="#">Find a dealer</a>
-                    <a href="#">About INDIAN</a>
-                    <a href="#">Owner</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Youtube</a>
+                    <a href="#">Contact a Dealer</a>
                 </div>
+               </div>
+
+          
             </div>
             <div class="fixed-footer-logo">
                 <img title="Indian motercycles" src="img/logo/indiamotorcycle-logo-bottom.png" alt="">
             </div>
         </div>
-
-
-    
-
-
-
-
-
-
-
-
-
 
         <!-- stiky header -->
         <script>
@@ -273,7 +330,7 @@
             function menutoggle(){
                 if(MenuItems.style.maxHeight=="0px")
                     {
-                        MenuItems.style.maxHeight="250px";
+                        MenuItems.style.maxHeight="300px";
                     }
                 else
                     {
