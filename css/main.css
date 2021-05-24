@@ -75,6 +75,13 @@
 .header .header-icon .fa-bars{
     color: #9c122a;
 }
+.header-icon a{
+    text-decoration: none;
+    color: black;
+}
+.header-icon a:hover{
+    color: black;
+}
 @media screen and (max-width:1180px){
     .header ul li a{
         margin: 0 10px;
