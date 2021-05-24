@@ -1,0 +1,52 @@
+/* brnad logo */
+.lang-logo{
+    width: 100%;
+    border-top:10px solid #ddd;
+}
+.lang-logo img{
+    width: 180px;
+    margin: 5px;
+}
+@media screen and (max-width:1000px){
+    .lang-logo img{
+        width: 130px;
+    }
+}
+/* contries and language */
+.continent-holder{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image:url(../img/language/select-country-map.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.continent-holder .continent{
+    min-width: 200px;
+}
+.continent h2{
+    font-size: 32px;
+    padding-left: 30px;
+    margin:0px !important ;
+}
+.continent ul{
+    list-style: none;
+}
+.continent ul li a{
+    text-decoration: none;
+    color: #9c122a;
+    font-size: 20px;
+    font-weight: 500;
+}
+.continent ul li a:hover{
+    color: #9c122a;
+}
+@media screen and (max-width:1000px){
+    .continent-holder .continent{
+        width: 50%;
+    }
+}
+
+
